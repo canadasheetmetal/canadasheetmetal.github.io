@@ -1,0 +1,335 @@
+/* Capabilities Overview */
+.capabilities-overview {
+    background: var(--white);
+    padding: 100px 0;
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.overview-content h2 {
+    margin-bottom: 16px;
+}
+
+.overview-content .lead {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+    color: var(--industrial-black);
+    font-weight: 500;
+}
+
+.overview-content>p {
+    margin-bottom: 20px;
+}
+
+.services-checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.service-check-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--industrial-black);
+}
+
+.check-icon {
+    width: 24px;
+    height: 24px;
+    background: var(--primary-red);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    flex-shrink: 0;
+}
+
+.overview-illustration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.illustration {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* Section Header */
+.section-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px;
+}
+
+.section-tag {
+    display: inline-block;
+    padding: 6px 16px;
+    background: var(--accent-light);
+    color: var(--primary-red);
+    border-radius: var(--radius-full);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+}
+
+.section-header h2 {
+    margin-bottom: 16px;
+}
+
+/* Machinery Section */
+.machinery-section {
+    background: var(--light-gray);
+    padding: 100px 0;
+}
+
+.machinery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.machine-card {
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    padding: 32px;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    border: 1px solid transparent;
+    min-height: 280px;
+}
+
+.machine-card:hover {
+    border-color: var(--primary-red);
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.machine-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.machine-icon-wrapper {
+    width: 56px;
+    height: 56px;
+    background: var(--light-gray);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: var(--industrial-black);
+}
+
+.machine-icon-wrapper svg {
+    width: 32px;
+    height: 32px;
+}
+
+.machine-card:hover .machine-icon-wrapper {
+    background: var(--accent-light);
+    transform: scale(1.05);
+}
+
+.machine-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--light-gray);
+    line-height: 1;
+}
+
+.machine-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: var(--industrial-black);
+}
+
+.machine-specs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.machine-specs li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+    color: var(--steel-gray);
+    line-height: 1.5;
+}
+
+.spec-bullet {
+    color: var(--primary-red);
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+/* Support Section */
+.support-section {
+    background: var(--white);
+    padding: 100px 0;
+}
+
+.support-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.support-card {
+    background: var(--light-gray);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    text-align: center;
+    transition: all 0.3s ease;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.support-card:hover {
+    background: var(--industrial-black);
+    transform: translateY(-5px);
+}
+
+.support-card:hover h4,
+.support-card:hover p {
+    color: var(--white);
+}
+
+.support-card h4 {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    color: var(--industrial-black);
+    transition: color 0.3s ease;
+}
+
+.support-card p {
+    font-size: 0.85rem;
+    color: var(--steel-gray);
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+/* CTA Section */
+.capabilities-cta {
+    background: var(--light-gray);
+    padding: 100px 0;
+}
+
+.cta-box {
+    background: linear-gradient(135deg, var(--industrial-black) 0%, var(--dark-surface) 100%);
+    border-radius: var(--radius-xl);
+    padding: 80px 60px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-box h2 {
+    color: var(--white);
+    margin-bottom: 16px;
+}
+
+.cta-box p {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 32px;
+    font-size: 1.1rem;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+/* Animations */
+.animate-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.animate-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .support-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .overview-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .overview-illustration {
+        order: -1;
+    }
+
+    .illustration {
+        max-width: 320px;
+    }
+
+    .machinery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .machine-card {
+        min-height: auto;
+    }
+
+    .support-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .support-card {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .support-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .cta-box {
+        padding: 48px 24px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .animate-section {
+        animation: none !important;
+        opacity: 1;
+        transform: none;
+    }
+}
