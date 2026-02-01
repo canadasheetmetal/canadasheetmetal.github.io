@@ -69,7 +69,15 @@ const Home = () => {
             {/* Hero Section */}
             <section className="hero">
                 <div className="hero-bg">
-                    <img src="/images/hero-bg.webp" alt="Metal Fabrication Shop" />
+                    <video
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        poster="/images/hero-bg.webp"
+                    >
+                        <source src="/images/Metal_Fabrication_Video_Generation.mp4" type="video/mp4" />
+                    </video>
                     <div className="hero-overlay"></div>
                 </div>
 
