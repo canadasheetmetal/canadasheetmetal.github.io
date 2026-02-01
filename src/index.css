@@ -264,3 +264,39 @@ section {
     padding: 0 16px;
   }
 }
+
+@media (max-width: 480px) {
+  :root {
+    --section-padding: 48px;
+    --header-height: 60px;
+  }
+
+  .container {
+    padding: 0 12px;
+  }
+
+  h1 {
+    font-size: clamp(1.75rem, 6vw, 2.5rem);
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  .page-header {
+    padding: 60px 0;
+  }
+}

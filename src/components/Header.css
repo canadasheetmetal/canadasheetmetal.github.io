@@ -98,6 +98,11 @@
         display: flex;
     }
 
+    .logo {
+        width: 200px;
+        height: 60px;
+    }
+
     .nav {
         position: fixed;
         top: var(--header-height);
@@ -126,5 +131,23 @@
 
     .header-cta {
         display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 140px;
+        height: 50px;
+    }
+
+    .header-container {
+        padding: 0 12px;
+        gap: 12px;
+    }
+
+    .header-cta.mobile-cta {
+        display: inline-flex;
+        padding: 8px 16px;
+        font-size: 0.8rem;
     }
 }

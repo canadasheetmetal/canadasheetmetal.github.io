@@ -510,6 +510,7 @@
     }
 
     .industries-strip {
+        grid-template-columns: repeat(2, 1fr);
         gap: 12px;
     }
 
@@ -520,6 +521,54 @@
 
     .cta-box {
         padding: 48px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content {
+        padding: 60px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero-content>p {
+        font-size: 0.95rem;
+    }
+
+    .hero-tag {
+        font-size: 0.75rem;
+        padding: 6px 14px;
+    }
+
+    .industries-strip {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+
+    .industry-pill {
+        padding: 12px 20px;
+        font-size: 0.85rem;
+    }
+
+    .capability-items {
+        gap: 16px;
+    }
+
+    .capability-check {
+        width: 24px;
+        height: 24px;
+        font-size: 0.65rem;
+    }
+
+    .cta-box {
+        padding: 36px 16px;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
     }
 }
 
