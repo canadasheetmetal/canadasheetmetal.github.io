@@ -10,6 +10,7 @@ const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
 const Capabilities = lazy(() => import('./pages/Capabilities'));
 const Industries = lazy(() => import('./pages/Industries'));
+const Contact = lazy(() => import('./pages/Contact'));
 
 // Loading component
 const PageLoader = () => (
@@ -36,8 +37,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/capabilities" element={<Capabilities />} />
             <Route path="/industries" element={<Industries />} />
-            {/* Reuse Contact info or create a page, reusing Industries as placeholder if needed or just Home for now */}
-            <Route path="/contact" element={<div className="container" style={{ padding: '80px 0' }}><h1>Contact Page Coming Soon</h1></div>} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </Suspense>
       </main>

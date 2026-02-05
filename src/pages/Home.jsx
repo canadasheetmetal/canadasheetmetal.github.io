@@ -92,7 +92,7 @@ const Home = () => {
 
                     <div className="hero-buttons animate-hero-buttons">
                         <Link to="/contact" className="btn btn-primary">Request a Quote</Link>
-                        <Link to="/contact" className="btn btn-outline-light">Contact Us</Link>
+                        <Link to="/about" className="btn btn-outline-light">About Us</Link>
                     </div>
                 </div>
 
