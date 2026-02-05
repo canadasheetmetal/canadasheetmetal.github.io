@@ -136,18 +136,29 @@
 
 @media (max-width: 480px) {
     .logo {
-        width: 140px;
-        height: 50px;
+        width: 200px;
+        height: 60px;
+        flex-shrink: 0;
+    }
+
+    .logo img {
+        left: 0;
+        transform: translateY(-50%) scale(0.75);
+        transform-origin: left center;
     }
 
     .header-container {
-        padding: 0 12px;
-        gap: 12px;
+        padding: 0 20px 0 0;
+        gap: 8px;
+        justify-content: space-between;
     }
 
-    .header-cta.mobile-cta {
-        display: inline-flex;
-        padding: 8px 16px;
-        font-size: 0.8rem;
+    .header-cta {
+        display: none !important;
+    }
+
+    /* Create a mobile specific small button if needed, or just rely on menu */
+    .mobile-menu-toggle {
+        margin-left: auto;
     }
 }

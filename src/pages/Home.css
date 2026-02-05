@@ -31,7 +31,8 @@
 .hero-content {
     position: relative;
     z-index: 1;
-    padding: 120px 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
     max-width: 700px;
 }
 
@@ -527,7 +528,8 @@
 
 @media (max-width: 480px) {
     .hero-content {
-        padding: 60px 0;
+        padding: 80px 24px;
+        width: 100%;
     }
 
     .hero-content h1 {
