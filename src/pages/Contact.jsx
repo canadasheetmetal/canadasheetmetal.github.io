@@ -81,22 +81,47 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
+        setSubmitStatus(null);
 
-        // Simulate form submission
-        setTimeout(() => {
-            setIsSubmitting(false);
-            setSubmitStatus('success');
-            setFormData({
-                name: '',
-                email: '',
-                phone: '',
-                company: '',
-                message: ''
+        const formDataToSend = new FormData();
+        formDataToSend.append("access_key", "9a8d2420-793e-4920-a18d-f383e09d0239");
+        formDataToSend.append("name", formData.name);
+        formDataToSend.append("email", formData.email);
+        formDataToSend.append("phone", formData.phone);
+        formDataToSend.append("company", formData.company);
+        formDataToSend.append("message", formData.message);
+        formDataToSend.append("subject", "New Contact Form Submission - Canada Sheet Metal");
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formDataToSend
             });
 
-            // Reset status after 5 seconds
+            const data = await response.json();
+
+            if (data.success) {
+                setSubmitStatus('success');
+                setFormData({
+                    name: '',
+                    email: '',
+                    phone: '',
+                    company: '',
+                    message: ''
+                });
+                // Reset status after 5 seconds
+                setTimeout(() => setSubmitStatus(null), 5000);
+            } else {
+                setSubmitStatus('error');
+                setTimeout(() => setSubmitStatus(null), 5000);
+            }
+        } catch (error) {
+            console.error('Form submission error:', error);
+            setSubmitStatus('error');
             setTimeout(() => setSubmitStatus(null), 5000);
-        }, 1500);
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -146,8 +171,8 @@ const Contact = () => {
                                         </div>
                                         <div className="info-content">
                                             <h4>Email Us</h4>
-                                            <a href="mailto:info@canadasheetmetal.com">info@canadasheetmetal.com</a>
-                                            <a href="mailto:quotes@canadasheetmetal.com">quotes@canadasheetmetal.com</a>
+                                            <a href="mailto:orders@canadasheetmetal.com">orders@canadasheetmetal.com</a>
+                                            <a href="mailto:inquiry@canadasheetmetal.com">inquiry@canadasheetmetal.com</a>
                                         </div>
                                     </div>
 
@@ -260,6 +285,17 @@ const Contact = () => {
                                                     <polyline points="22 4 12 14.01 9 11.01" />
                                                 </svg>
                                                 Thank you! Your message has been sent successfully.
+                                            </div>
+                                        )}
+
+                                        {submitStatus === 'error' && (
+                                            <div className="error-message">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                                    <circle cx="12" cy="12" r="10" />
+                                                    <line x1="15" y1="9" x2="9" y2="15" />
+                                                    <line x1="9" y1="9" x2="15" y2="15" />
+                                                </svg>
+                                                Something went wrong. Please try again or email us directly.
                                             </div>
                                         )}
                                     </form>

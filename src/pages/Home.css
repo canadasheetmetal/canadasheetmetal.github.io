@@ -491,7 +491,7 @@
 
 @media (max-width: 768px) {
     .hero-content {
-        padding: 80px 0;
+        padding: 80px 24px;
     }
 
     .hero-content h1 {
@@ -501,6 +501,8 @@
     .hero-buttons,
     .cta-buttons {
         flex-direction: column;
+        width: 100%;
+        max-width: 400px;
     }
 
     .highlights-grid {
@@ -528,7 +530,7 @@
 
 @media (max-width: 480px) {
     .hero-content {
-        padding: 80px 24px;
+        padding: 60px 20px;
         width: 100%;
     }
 
@@ -543,6 +545,11 @@
     .hero-tag {
         font-size: 0.75rem;
         padding: 6px 14px;
+    }
+
+    .hero-buttons {
+        max-width: 100%;
+        padding: 0;
     }
 
     .industries-strip {

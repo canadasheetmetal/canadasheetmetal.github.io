@@ -37,7 +37,7 @@ const Footer = () => {
                             <h4>Contact</h4>
                             <p>📍 Address: Coming Soon</p>
                             <p>📞 Phone: Coming Soon</p>
-                            <p>✉️ contact@canadasheetmetal.com</p>
+                            <p>✉️ orders@canadasheetmetal.com</p>
                         </div>
                     </div>
                 </div>

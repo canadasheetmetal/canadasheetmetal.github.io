@@ -350,6 +350,27 @@
     }
 }
 
+/* Error Message */
+.error-message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px;
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    border-radius: 10px;
+    color: #dc2626;
+    font-weight: 500;
+    animation: fadeIn 0.3s ease;
+}
+
+.error-message svg {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    stroke: #dc2626;
+}
+
 /* Animate Section */
 .animate-section {
     opacity: 0;
