@@ -171,21 +171,21 @@ const Home = () => {
 
                             <div className="capability-items">
                                 <div className="capability-item">
-                                    <div className="capability-check">✓</div>
+                                    <div className="capability-check"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg></div>
                                     <div>
                                         <strong>CNC Laser Cutting</strong>
                                         <p>Precision cutting up to 20mm with tight tolerances.</p>
                                     </div>
                                 </div>
                                 <div className="capability-item">
-                                    <div className="capability-check">✓</div>
+                                    <div className="capability-check"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg></div>
                                     <div>
                                         <strong>14ft CNC Press Brake</strong>
                                         <p>Capable of complex, long bends with high accuracy.</p>
                                     </div>
                                 </div>
                                 <div className="capability-item">
-                                    <div className="capability-check">✓</div>
+                                    <div className="capability-check"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg></div>
                                     <div>
                                         <strong>MIG, TIG & Spot Welding</strong>
                                         <p>Complete welding services for all applications.</p>

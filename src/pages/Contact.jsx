@@ -130,14 +130,14 @@ const Contact = () => {
             <section className="contact-hero">
                 <div className="map-background">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.4!2d-79.38!3d43.65!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDM5JzAwLjAiTiA3OcKwMjInNDguMCJX!5e0!3m2!1sen!2sca!4v1234567890"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.123!2d-79.7617!3d43.5897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3f5a3f5a3f5b%3A0x0!2s6810+Kitimat+Rd%2C+Mississauga%2C+ON+L5N+5M2%2C+Canada!5e0!3m2!1sen!2sca!4v1700000000000"
                         width="100%"
                         height="100%"
                         style={{ border: 0 }}
                         allowFullScreen=""
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
-                        title="Canada Sheet Metal Location"
+                        title="Canada Sheet Metal Location - 6810 Kitimat Rd, Mississauga"
                     />
                     <div className="map-overlay"></div>
                 </div>
@@ -159,9 +159,9 @@ const Contact = () => {
                                         </div>
                                         <div className="info-content">
                                             <h4>Our Location</h4>
-                                            <p>123 Industrial Avenue</p>
-                                            <p>Toronto, Ontario</p>
-                                            <p>M5V 2K7, Canada</p>
+                                            <p>6810 Kitimat Rd</p>
+                                            <p>Mississauga, ON, L5N 5M2</p>
+                                            <p>Canada</p>
                                         </div>
                                     </div>
 
@@ -171,19 +171,7 @@ const Contact = () => {
                                         </div>
                                         <div className="info-content">
                                             <h4>Email Us</h4>
-                                            <a href="mailto:orders@canadasheetmetal.com">orders@canadasheetmetal.com</a>
                                             <a href="mailto:inquiry@canadasheetmetal.com">inquiry@canadasheetmetal.com</a>
-                                        </div>
-                                    </div>
-
-                                    <div className="info-block">
-                                        <div className="info-icon">
-                                            <PhoneIcon />
-                                        </div>
-                                        <div className="info-content">
-                                            <h4>Call Us</h4>
-                                            <a href="tel:+14165551234">+1 (416) 555-1234</a>
-                                            <p className="muted">Toll Free: 1-800-555-1234</p>
                                         </div>
                                     </div>
                                 </div>
