@@ -174,6 +174,16 @@ const Contact = () => {
                                             <a href="mailto:inquiry@canadasheetmetal.com">inquiry@canadasheetmetal.com</a>
                                         </div>
                                     </div>
+
+                                    <div className="info-block">
+                                        <div className="info-icon">
+                                            <PhoneIcon />
+                                        </div>
+                                        <div className="info-content">
+                                            <h4>Call Us</h4>
+                                            <a href="tel:+19055410276">+1 (905) 541-0276</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </AnimatedSection>
 
@@ -222,7 +232,7 @@ const Contact = () => {
                                                     name="phone"
                                                     value={formData.phone}
                                                     onChange={handleChange}
-                                                    placeholder="+1 (416) 555-0000"
+                                                    placeholder="+1 (905) 541-0276"
                                                 />
                                             </div>
                                             <div className="form-group">
